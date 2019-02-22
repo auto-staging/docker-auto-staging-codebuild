@@ -2,7 +2,7 @@
 
 > Docker image used in the Auto Staging CodeBuild Job
 
-[Image on Docker Hub]([https://link](https://cloud.docker.com/u/autostaging/repository/docker/autostaging/auto-staging-codebuild/general))
+[Image on Docker Hub](https://cloud.docker.com/u/autostaging/repository/docker/autostaging/auto-staging-codebuild/general)
 
 ## Commands
 
