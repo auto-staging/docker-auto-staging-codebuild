@@ -1,2 +1,19 @@
-# docker-auto-staging-build
-Docker image used in the Auto Staging CodeBuild Job
+# Docker Auto Staging CodeBuild Image
+
+> Docker image used in the Auto Staging CodeBuild Job
+
+[Image on Docker Hub]([https://link](https://cloud.docker.com/u/autostaging/repository/docker/autostaging/auto-staging-codebuild/general))
+
+## Commands
+
+### Build image
+
+``` bash
+docker build -t autostaging/auto-staging-codebuild .
+```
+
+### Push image
+
+``` bash
+docker push autostaging/auto-staging-codebuild
+```
