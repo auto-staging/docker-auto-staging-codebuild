@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ENV TERRAFORM_VERSION=0.11.13
+ENV TERRAFORM_VERSION=0.11.14
 
 RUN apt-get update && \
     apt-get install curl jq python python-pip python3 python3-pip ca-certificates git openssl unzip wget make -y --no-install-recommends && \
