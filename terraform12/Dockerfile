@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
-ENV TERRAFORM_VERSION=0.12.24
-ENV TERRASTATE_VERSION=1.4.0
+ENV TERRAFORM_VERSION=0.12.26
+ENV TERRASTATE_VERSION=1.5.0
 
 RUN apt-get update && \
     apt-get install curl jq python python-pip python3 python3-pip ca-certificates git openssl unzip wget make -y --no-install-recommends && \
