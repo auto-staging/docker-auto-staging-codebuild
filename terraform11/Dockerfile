@@ -1,8 +1,7 @@
 FROM ubuntu:18.04
 
 ENV TERRAFORM_VERSION=0.11.15-oci
-ENV TERRASTATE_VERSION=1.6.2
-
+ENV TERRASTATE_VERSION=1.7.1
 RUN apt-get update && \
     apt-get install curl jq python python-pip python3 python3-pip ca-certificates git openssl unzip wget make openssh-client -y --no-install-recommends && \
     cd /tmp && \
