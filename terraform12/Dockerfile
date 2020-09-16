@@ -4,7 +4,7 @@ ENV TERRAFORM_VERSION=0.12.29
 ENV TERRASTATE_VERSION=1.6.1
 
 RUN apt-get update && \
-    apt-get install curl jq python python-pip python3 python3-pip ca-certificates git openssl unzip wget make -y --no-install-recommends && \
+    apt-get install curl jq python python-pip python3 python3-pip ca-certificates git openssl unzip wget make openssh-client -y --no-install-recommends && \
     cd /tmp && \
     wget https://github.com/janritter/terrastate/releases/download/${TERRASTATE_VERSION}/linux_amd64_terrastate && mv linux_amd64_terrastate /usr/bin/terrastate && chmod +x /usr/bin/terrastate && \
     wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
