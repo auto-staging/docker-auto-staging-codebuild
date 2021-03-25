@@ -9,11 +9,11 @@
 ### Build image
 
 ``` bash
-docker build -t autostaging/auto-staging-codebuild:terraform11 ./terraform11
+docker build -t autostaging/auto-staging-codebuild:terraform1x ./terraform1x
 ```
 
 ### Push image
 
 ``` bash
-docker push autostaging/auto-staging-codebuild:terraform11
+docker push autostaging/auto-staging-codebuild:terraform1*
 ```
