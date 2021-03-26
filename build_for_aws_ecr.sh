@@ -2,7 +2,7 @@
 
 export TAG=terraform14
 # ECR is located in TS prod guarantee account, later change to the new one
-export WSUME_ACCOUNT=prod
+export AWSUME_ACCOUNT=prod
 #export AWS_ACCOUNT_ID=636672185349
 export REGISTRY_URI=public.ecr.aws
 export REGISTRY_ALIAS=u1c8d5f2
@@ -25,4 +25,4 @@ docker push $REGISTRY_URI/$REGISTRY_ALIAS/$IMAGE_NAME
 docker tag $IMAGE_NAME:latest $REGISTRY_URI/$REGISTRY_ALIAS/$IMAGE_NAME:$TAG
 docker push $REGISTRY_URI/$REGISTRY_ALIAS/$IMAGE_NAME:$TAG
 docker logout $REGISTRY_URI
-# public.ecr.aws/u1c8d5f2/autostaging/auto-staging-codebuild:latest
+# paste image URI in your CodeBuild project e.g.: public.ecr.aws/u1c8d5f2/autostaging/auto-staging-codebuild:terraform14
