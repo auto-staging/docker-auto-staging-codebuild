@@ -12,8 +12,20 @@
 docker build -t autostaging/auto-staging-codebuild:terraform1x ./terraform1x
 ```
 
-### Push image
+### Push image to DockerHub
 
-``` bash
-docker push autostaging/auto-staging-codebuild:terraform1*
-```
+- Make sure you have your DockerHub login configured
+  
+    ``` bash
+    docker login
+    ```
+
+- Push image
+  
+    ``` bash
+    docker push autostaging/auto-staging-codebuild:terraform1x
+    ```
+
+### Push to AWS ECR
+
+- See `build_for_aws_ecr.sh* to build & push to the public AWS ECR.
